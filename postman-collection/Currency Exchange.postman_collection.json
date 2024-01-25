@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "ed2d12b3-1062-413a-9e9c-e726923f56a9",
+		"name": "Currency Exchange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7366167"
+	},
+	"item": [
+		{
+			"name": "Get Rates",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:20100/CurrencyExchange/currency-exchange/from/EURO/to/USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "20100",
+					"path": [
+						"CurrencyExchange",
+						"currency-exchange",
+						"from",
+						"EURO",
+						"to",
+						"USD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Conversation Details",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:20100/CurrencyExchange/currency-conversion/from/EURO/to/USD/80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "20100",
+					"path": [
+						"CurrencyExchange",
+						"currency-conversion",
+						"from",
+						"EURO",
+						"to",
+						"USD",
+						"80"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
